@@ -1,0 +1,45 @@
+<header>
+    <h1>TIENDA ONLINE</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/blog/">Página Secundaria</a></li>
+            <li><a href="/main/">Página principal</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #7ba1f1;
+        color: white;
+    }
+
+    nav{        
+        width: 600px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+        list-style: none;
+    }
+
+    nav ul li a{
+        color: white;
+        font-size: 1.3rem;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    nav ul li a:hover{
+        text-decoration: underline;
+    }
+</style>

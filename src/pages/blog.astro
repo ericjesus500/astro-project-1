@@ -1,21 +1,9 @@
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>About Astro</title>
-    <style>
-      h1{
-        color: blue;
-      }
-    </style>
-	</head>
-	<body>
-		<h1>Blog Astro</h1>
-		<p>Página Blog</p>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-	</body>
-</html>
+---
+import SegundoLayout from "../layout/SegundoLayout.astro"
+const subtitle = "Página Secundaria"
+---
+
+<SegundoLayout subtitle={subtitle}>
+	<h3>Segunda Página</h3>
+	<p>Esta es una segunda página que hereda la estructura de la página principal</p>
+</SegundoLayout>

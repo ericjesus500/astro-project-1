@@ -1,0 +1,17 @@
+---
+import MainLayout from "./MainLayout.astro"
+const {subtitle} = Astro.props
+---
+
+<MainLayout title="Página Secundaria">
+    <section>
+        <h2>{subtitle}</h2>
+        <slot />
+    </section>
+</MainLayout>
+
+<style>
+    h2{
+        color: tomato;        
+    }
+</style>
