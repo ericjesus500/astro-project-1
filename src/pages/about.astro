@@ -1,21 +1,9 @@
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>About Astro</title>
-    <style>
-      h1{
-        color: blue;
-      }
-    </style>
-	</head>
-	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-		<h1>About Astro</h1>
-		<p>Página acerca de</p>
-	</body>
-</html>
+---
+import MainLayout  from "../layout/MainLayout.astro";
+const title = "About"
+---
+
+<MainLayout title={title}>
+    <h2>Bienvenido a la página Acerca de</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quisquam sequi doloremque laboriosam! Minus incidunt necessitatibus, ratione, iste corrupti nobis voluptatem in quo odio voluptates nam facere alias explicabo nemo enim quia error accusamus. Iusto quia rerum, quo quaerat odit vel, consequuntur consequatur sunt labore in provident doloribus at fugit!</p>
+</MainLayout>

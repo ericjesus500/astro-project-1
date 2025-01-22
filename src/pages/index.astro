@@ -10,16 +10,19 @@ import Header from "../components/Header.astro"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
-    <style>
-      h1{
-        color: blue;
-      }
-    </style>
+		<style>
+		h1{
+			color: blue;			
+		}
+		p{
+			font-size: 2rem;
+		}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<h1>Hola Mundo Astro</h1>
 		<p>Probar actualización en NetLify</p>
-		<Button color="blue" label="Boton componente astro"></Button>
+		<Button color="blue" label="Boton como componente astro"></Button>
 	</body>
 </html>
